@@ -1,9 +1,10 @@
-package org.venterok.advancedblocks
+package org.venterok.advancedblocks.features
 
 import org.bukkit.Material
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.block.BlockPlaceEvent
+import org.venterok.advancedblocks.AdvancedBlocks
 
 class PlaceListener : Listener {
     @EventHandler

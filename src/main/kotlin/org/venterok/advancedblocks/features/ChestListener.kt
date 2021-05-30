@@ -1,8 +1,7 @@
-package org.venterok.advancedblocks
+package org.venterok.advancedblocks.features
 
 import org.bukkit.Material
 import org.bukkit.Particle
-import org.bukkit.Sound
 import org.bukkit.block.Chest
 import org.bukkit.entity.Player
 import org.bukkit.event.EventHandler
@@ -13,6 +12,7 @@ import org.bukkit.event.player.PlayerInteractEvent
 import org.bukkit.inventory.Inventory
 import org.bukkit.scheduler.BukkitRunnable
 import org.bukkit.scheduler.BukkitTask
+import org.venterok.advancedblocks.AdvancedBlocks
 
 class ChestListener: Listener {
 

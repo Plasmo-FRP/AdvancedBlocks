@@ -1,4 +1,4 @@
-package org.venterok.advancedblocks
+package org.venterok.advancedblocks.features
 
 import org.bukkit.Material
 import org.bukkit.event.EventHandler

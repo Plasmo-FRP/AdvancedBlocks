@@ -1,12 +1,11 @@
-package org.venterok.advancedblocks
+package org.venterok.advancedblocks.features
 
 import org.bukkit.Bukkit
-import org.bukkit.Material
-import org.bukkit.block.Block
 import org.bukkit.block.BlockFace
 import org.bukkit.potion.PotionEffect
 import org.bukkit.potion.PotionEffectType
 import org.bukkit.scheduler.BukkitRunnable
+import org.venterok.advancedblocks.AdvancedBlocks
 
 
 class MudBlocks {
