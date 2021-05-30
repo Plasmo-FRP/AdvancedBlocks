@@ -1,4 +1,4 @@
-package org.venterok.advancedblocks
+package org.venterok.advancedblocks.features
 
 import org.bukkit.Material
 import org.bukkit.TreeSpecies
@@ -11,6 +11,7 @@ import org.bukkit.inventory.ItemStack
 import org.bukkit.scheduler.BukkitRunnable
 import org.spigotmc.event.entity.EntityDismountEvent
 import org.spigotmc.event.entity.EntityMountEvent
+import org.venterok.advancedblocks.AdvancedBlocks
 
 class BoatBreak : Listener {
     val boatlist = mutableListOf<Entity>()

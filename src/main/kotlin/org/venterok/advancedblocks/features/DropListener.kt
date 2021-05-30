@@ -1,14 +1,9 @@
-package org.venterok.advancedblocks
+package org.venterok.advancedblocks.features
 
-import org.bukkit.Material
-import org.bukkit.entity.Entity
-import org.bukkit.entity.EntityType
-import org.bukkit.entity.Item
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
-import org.bukkit.event.block.BlockPlaceEvent
 import org.bukkit.event.player.PlayerDropItemEvent
-import org.bukkit.inventory.ItemStack
+import org.venterok.advancedblocks.AdvancedBlocks
 import kotlin.random.Random
 
 class DropListener : Listener {

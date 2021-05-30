@@ -20,6 +20,15 @@ mudBlock:
     - DIRT
     - SAND
 
+blockHardness:
+  blackstone:
+    instruments:
+      iron_pickaxe:
+        time: 1000000
+      diamond_pickaxe:
+        time: 1
+    defaultTime: 10
+
 dropEvent:
   enabled: true
   splitMultiplier: 2
