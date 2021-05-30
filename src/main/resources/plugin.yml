@@ -1,0 +1,6 @@
+name: AdvancedBlocks
+version: 1.0
+main: org.venterok.advancedblocks.AdvancedBlocks
+api-version: 1.16
+description: Improve blocks, fix game bugs
+author: Venterok
