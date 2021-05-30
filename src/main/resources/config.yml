@@ -23,11 +23,19 @@ mudBlock:
 blockHardness:
   blackstone:
     instruments:
+      wooden_pickaxe:
+        time: 1000
+      stone_pickaxe:
+        time: 170
+      golden_pickaxe:
+        time: 50
       iron_pickaxe:
-        time: 1000000
+        time: 100
       diamond_pickaxe:
-        time: 1
-    defaultTime: 10
+        time: 50
+      netherite_pickaxe:
+        time: 25
+    defaultTime: 1000000
 
 dropEvent:
   enabled: true
