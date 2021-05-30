@@ -36,4 +36,13 @@ dropEvent:
     - PUMPKIN_SEEDS
     - MELON_SEEDS
     - BEETROOT_SEEDS
+
+blockHardness:
+  blackstone:
+    instruments:
+      iron_pickaxe:
+        time: 1000000
+      diamond_pickaxe:
+        time: 1
+    defaultTime: 10
 ```
