@@ -17,7 +17,7 @@ blocksForCancel:
 
 messageOnCancel:
   enabled: true # true or false
-  message: "#F2E9E4> #F28135Блок временно отлючён на сервере."
+  message: "##AAAAAA> #ED4343Блок временно отключён на сервере."
   #%block% Cancel block
 
 mudBlock:
@@ -36,13 +36,5 @@ dropEvent:
     - PUMPKIN_SEEDS
     - MELON_SEEDS
     - BEETROOT_SEEDS
-
-blockHardness:
-  blackstone:
-    instruments:
-      iron_pickaxe:
-        time: 1000000
-      diamond_pickaxe:
-        time: 1
-    defaultTime: 10
+    
 ```
