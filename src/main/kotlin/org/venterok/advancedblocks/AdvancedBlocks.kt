@@ -4,6 +4,8 @@ import net.md_5.bungee.api.ChatColor
 import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
 import org.venterok.advancedblocks.features.*
+import org.venterok.advancedblocks.features.BlockHardness.BlockCBBListener
+import org.venterok.advancedblocks.features.BlockHardness.CustomHardnessBlock
 import java.io.File
 import java.util.regex.Matcher
 import java.util.regex.Pattern
@@ -27,6 +29,9 @@ class AdvancedBlocks : JavaPlugin() {
         boatBreak.timer()
         mudBlocks.timer()
         Bukkit.getPluginManager().registerEvents( PlaceListener(),this )
+
+        CustomHardnessBlock.load();
+        Bukkit.getPluginManager().registerEvents( BlockCBBListener(), this)
     }
     override fun onDisable() {
 
