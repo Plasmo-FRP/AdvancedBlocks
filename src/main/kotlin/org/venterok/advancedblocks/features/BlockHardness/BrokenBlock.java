@@ -71,6 +71,9 @@ public class BrokenBlock {
     public void destroyBlockObject() {
         sendBreakPacket(-1);
         //  Here you have to remove your BrokenBlock using the BrokenBlocksService, on the next step
+
+        BlockMorphUtils.playBlockSound(block);
+        BlockMorphUtils.playBlockParticles(block);
         BrokenBlocksService.removeBrokenBlock(block.getLocation());
     }
 
