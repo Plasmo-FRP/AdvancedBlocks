@@ -5,6 +5,7 @@ import org.bukkit.TreeSpecies
 import org.bukkit.entity.Boat
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
+import org.bukkit.entity.Player
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.inventory.ItemStack
@@ -20,6 +21,7 @@ class BoatBreak : Listener {
     fun boatMount(e : EntityMountEvent) {
         val boat = e.mount
         if (boat.type != EntityType.BOAT) return
+        if (boatlist.contains(boat)) return
         boatlist.add(boat)
     }
     @EventHandler
@@ -31,10 +33,12 @@ class BoatBreak : Listener {
     fun timer() {
         object: BukkitRunnable(){
             override fun run() {
+                if (boatlist.isEmpty()) return
                 for (boat in boatlist) {
                     val boatObj = boat as Boat
                     if (!boatObj.isInWater) {
                         val boatLoc = boatObj.location
+                        if (boatObj.passengers.isEmpty()) continue
                         when (boatObj.woodType) {
                             TreeSpecies.ACACIA -> boatLoc.world?.dropItem(boat.location.add(0.0, 1.0, 0.0), ItemStack(Material.ACACIA_BOAT))
                             TreeSpecies.DARK_OAK -> boatLoc.world?.dropItem(boat.location.add(0.0, 1.0, 0.0), ItemStack(Material.DARK_OAK_BOAT))
